@@ -1,0 +1,28 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import 'variables';
+@import 'reboot';
+
+html,
+body,
+app-root,
+app-worksheet-generator {
+  height: 100%;
+}
+
+app-root,
+app-worksheet-generator {
+  display: block;
+  position: relative;
+}
+
+.d-print-none {
+  @media print {
+    display: none !important;
+  }
+}
+
+@media print {
+  body {
+    background-color: transparent;
+  }
+}
